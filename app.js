@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname,'public')));
 const routes = require('./routes');
 app.get('/',routes.home);
 app.get('/about',routes.about);
-app.get('/product_single',routes.product_single);
+app.get('/product_single/:id?',routes.product_single);
 app.get('/*',routes.notFound);
 
 
@@ -50,4 +50,8 @@ app.listen(3000, (req, res)=>{
 // Todo 15 - Create public Folder
 // Todo 16 - Create images | script | style folder
 // Todo 17 - Create styles.css inside public/style folder
+// Todo 18 - Create product.json file
+// Todo 19 - Add Product Images
+// Todo 21 - Implement product images on main page
+
 

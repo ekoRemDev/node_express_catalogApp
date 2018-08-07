@@ -2,11 +2,41 @@
 <html lang="en">
 <head>
     <% include partials/head.ejs %>
+    <title><%= title %></title>
 </head>
 <body>
 <% include partials/header.ejs %>
 
-<% include partials/dummy.ejs %>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center"><%= title %></h1>
+        <p class="text-center"><%= slogan %></p>
+    </div>
+</div>
+
+<div class="container">
+
+
+
+    <div class="row">
+        <% for(var i = 0; i < products.length; i++ ){ %>
+        <a href="/product_single/<%= products[i].number %>" role="button">
+            <div class="col-md-3">
+                <span class="label label-info"><%= products[i].title %></span>
+                <img src="/images/<%= products[i].poster %>" alt="" class="img-fluid img-thumbnail">
+            </div>
+        </a>
+        <% } %>
+
+    </div>
+
+    <hr>
+
+
+</div> <!-- /container -->
 
 <% include partials/footer.ejs %>
 

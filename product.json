@@ -1,77 +1,208 @@
 {
   "products": [
     {
-    "title" : "Cup Cake 1",
-    "number" : "1",
-    "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-    "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-    "poster" : "star_wars_episode_1_poster.png",
-    "image" : "star_wars_episode_1_hero.jpg",
-    "price" : "25"
-  },
-    {
-      "title" : "Cup Cake 2",
-      "number" : "2",
-      "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-      "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-      "poster" : "star_wars_episode_1_poster.png",
-      "image" : "star_wars_episode_1_hero.jpg",
-      "price" : "25"
+      "title": "Cup Cake 1",
+      "number": "1",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake1.jpg",
+      "image": "cupcake1.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
     },
     {
-      "title" : "Cup Cake 3",
-      "number" : "3",
-      "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-      "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-      "poster" : "star_wars_episode_1_poster.png",
-      "image" : "star_wars_episode_1_hero.jpg",
-      "price" : "25"
+      "title": "Cup Cake 2",
+      "number": "2",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake2.jpg",
+      "image": "cupcake2.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
     },
     {
-      "title" : "Cup Cake 4",
-      "number" : "4",
-      "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-      "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-      "poster" : "star_wars_episode_1_poster.png",
-      "image" : "star_wars_episode_1_hero.jpg",
-      "price" : "25"
+      "title": "Cup Cake 3",
+      "number": "3",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake3.jpg",
+      "image": "cupcake3.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
     },
     {
-      "title" : "Cup Cake 5",
-      "number" : "5",
-      "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-      "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-      "poster" : "star_wars_episode_1_poster.png",
-      "image" : "star_wars_episode_1_hero.jpg",
-      "price" : "25"
+      "title": "Cup Cake 4",
+      "number": "4",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake4.jpg",
+      "image": "cupcake4.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
     },
     {
-      "title" : "Cup Cake 6",
-      "number" : "6",
-      "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-      "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-      "poster" : "star_wars_episode_1_poster.png",
-      "image" : "star_wars_episode_1_hero.jpg",
-      "price" : "25"
+      "title": "Cup Cake 5",
+      "number": "5",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake5.jpg",
+      "image": "cupcake5.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
     },
     {
-      "title" : "Cup Cake 7",
-      "number" : "7",
-      "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-      "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-      "poster" : "star_wars_episode_1_poster.png",
-      "image" : "star_wars_episode_1_hero.jpg",
-      "price" : "25"
+      "title": "Cup Cake 6",
+      "number": "6",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake6.jpg",
+      "image": "cupcake6.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
     },
     {
-      "title" : "Cup Cake 8",
-      "number" : "8",
-      "categories" : ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Anakin Skywalker", "Padmé Amidala", "Jar Jar Binks", "Darth Maul"],
-      "description" : "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
-      "poster" : "star_wars_episode_1_poster.png",
-      "image" : "star_wars_episode_1_hero.jpg",
-      "price" : "25"
+      "title": "Cup Cake 7",
+      "number": "7",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake7.jpg",
+      "image": "cupcake7.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
+    },
+    {
+      "title": "Cup Cake 8",
+      "number": "8",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake8.jpg",
+      "image": "cupcake8.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
+    },
+    {
+      "title": "Cup Cake 9",
+      "number": "9",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake9.jpg",
+      "image": "cupcake9.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
+    },
+    {
+      "title": "Cup Cake 10",
+      "number": "10",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake10.jpg",
+      "image": "cupcake10.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
+    },
+    {
+      "title": "Cup Cake 11",
+      "number": "11",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake11.jpg",
+      "image": "cupcake11.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
+    },
+    {
+      "title": "Cup Cake 12",
+      "number": "12",
+      "categories": [
+        "Qui-Gon Jinn",
+        "Obi-Wan Kenobi",
+        "Anakin Skywalker",
+        "Padmé Amidala",
+        "Jar Jar Binks",
+        "Darth Maul"
+      ],
+      "description": "Method. Heat oven to 180C/160C fan/gas 4 and fill a 12 cupcake tray with cases. Bake for 15 mins until golden brown and a skewer inserted into the middle of each cake comes out clean. To make the buttercream, whisk the butter until super soft then add the icing sugar, vanilla extract and a pinch of salt.",
+      "poster": "cupcake12.jpg",
+      "image": "cupcake12.jpg",
+      "price": "25",
+      "votes": "91% of buyers enjoyed this product! (87 votes)"
     }
-
   ]
 }
