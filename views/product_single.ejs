@@ -49,9 +49,11 @@
                     <hr>
 
                     <p><strong><%= searchResults[0].votes %></strong></p>
+                    <a href="/favorite/<%= searchResults[0].number %>">
                         <button type="button" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Favourite
                         </button>
+                    </a>
                         <button type="button" class="btn btn-default btn-sm">
                             <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Like
                         </button>

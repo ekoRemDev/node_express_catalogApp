@@ -24,7 +24,11 @@ const routes = require('./routes');
 app.get('/',routes.home);
 app.get('/about',routes.about);
 app.get('/product_single/:id?',routes.product_single);
+app.get('/contact',routes.contact);
+app.get('/login',routes.login);
+app.get('/favorite/:id?',routes.favorite);
 app.get('/*',routes.notFound);
+
 
 
 
@@ -53,5 +57,7 @@ app.listen(3000, (req, res)=>{
 // Todo 18 - Create product.json file
 // Todo 19 - Add Product Images
 // Todo 21 - Implement product images on main page
+// Todo 22 - contact and login templates and routes created
+// Todo 23 - favourites | like | decision list routes are created
 
 

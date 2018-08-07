@@ -54,7 +54,39 @@ exports.product_single = (req, res) => {
 exports.notFound = (req, res) => {
     res.render('notFound', {
         title: 'Not Found Title',
+        slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
         projectName : projectName,
         copyright : copyright
     });
+};
+
+exports.login = (req, res) => {
+    res.render('login', {
+        title: 'Login Title',
+        projectName : projectName,
+        copyright : copyright
+    });
+};
+
+exports.contact = (req, res) => {
+    res.render('contact', {
+        title: 'Contact Us',
+        slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
+        projectName : projectName,
+        copyright : copyright
+    });
+};
+
+exports.favorite = (req, res) => {
+
+    let requiredId = req.params.id;
+    res.send(requiredId);
+
+    // TODO i stopped here 
+
+    // res.render('favorite', {
+    //     title: 'favorite',
+    //     projectName : projectName,
+    //     copyright : copyright
+    // });
 };
