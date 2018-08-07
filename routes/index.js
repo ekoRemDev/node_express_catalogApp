@@ -6,7 +6,7 @@
 
 // Default Project Name for Header menu
 const projectName = "Catalog App";
-const copyright = 'Copyright 2018 EkoRemDev@gmail.com'
+const copyright = ' 2018 EkoRemDev@gmail.com';
 // Todo 20 - create an instance of product.json
 const productJSON = require('../product');
 const products = productJSON.products;

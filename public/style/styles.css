@@ -12,13 +12,7 @@ body {
     padding-right: 11%;
 }
 
-body {
-    padding-top: 50px;
-}
-.starter-template {
-    padding: 40px 15px;
-    text-align: center;
-}
+
 
 /* --------------------------
 Hero Image / Title Styles
@@ -503,9 +497,25 @@ Page Not Found Template Styles
     letter-spacing: 0.4px;
 }
 
+
+
+/* -----------------------------
+Custom Styles Styles
+-------------------------------- */
+body {
+    padding-top: 50px;
+    background-color: #F0FFFF;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
 .navbar-new-color{
     background-color: #99d6ff;
 }
+
 .jumbotron-new{
     background-color: #ccebff;
 }
