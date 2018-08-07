@@ -28,7 +28,7 @@ exports.about = (req, res) => {
 exports.product_single = (req, res) => {
     res.render('product_single', {
         title: 'Product Detail Title',
-        projectName : projectName,
+        projectName : projectName,ff
         copyright : copyright
     });
 };
