@@ -24,7 +24,8 @@ exports.home = (req, res) => {
 
 exports.about = (req, res) => {
     res.render('about', {
-        title: 'About Us Page Title',
+        title: 'About Us',
+        slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
         projectName : projectName,
         copyright : copyright
     });

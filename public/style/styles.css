@@ -88,6 +88,7 @@ Navbar and Navigation Styles / Overrides
 
 .dropdown.open .dropdown-menu li a:hover {
     color: #fde5b9;
+
 }
 
 .navbar-nav > li:first-child {
@@ -106,9 +107,6 @@ Navbar and Navigation Styles / Overrides
 .navbar-nav>li>.dropdown-menu {
     background-color: rgba(0,0,0,0.5);
 }
-
-
-
 
 
 /* -----------------------------
@@ -503,4 +501,11 @@ Page Not Found Template Styles
     font-weight: 400;
     font-size: 1.20em;
     letter-spacing: 0.4px;
+}
+
+.navbar-new-color{
+    background-color: #99d6ff;
+}
+.jumbotron-new{
+    background-color: #ccebff;
 }
