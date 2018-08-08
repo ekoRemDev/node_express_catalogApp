@@ -8,7 +8,7 @@ var productModel = new Schema({
     price: {type: Number, required: true},
 });
 
-model.exports = mongoose.model('Product', productModel);
+module.exports = mongoose.model('Product', productModel);
 
 // Todo 29 - Create a seed to seed some default data
-// create seed folder and file ProductSeeder.js
+// create seed folder and file product-seeder.js
