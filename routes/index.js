@@ -82,7 +82,7 @@ exports.favorite = (req, res) => {
     let requiredId = req.params.id;
     res.send(requiredId);
 
-    // TODO i stopped here
+    // TODO i stopped here i have to create first database and models then i'll continue editing
 
     // res.render('favorite', {
     //     title: 'favorite',
