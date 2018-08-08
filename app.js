@@ -11,7 +11,14 @@ const app = express();
 var path = require('path');
 app.use(express.static(path.join(__dirname,'public')));
 
+// Todo 26 - npm i mongo mongoose and create instances
+const mongo = require('mongodb');
+const mongoose = require('mongoose');
 
+// Todo 27 - Create a connection to mongoDb
+mongoose.connect('mongodb://localhost/node_express_catalogApp');
+const db = mongoose.connection;
+// Todo 28 - Create a model folder and create a product model
 
 
 // Todo 4 - Routes
@@ -28,6 +35,8 @@ app.get('/contact',routes.contact);
 app.get('/login',routes.login);
 app.get('/favorite/:id?',routes.favorite);
 app.get('/*',routes.notFound);
+
+
 
 
 
