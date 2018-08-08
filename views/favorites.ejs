@@ -13,16 +13,32 @@
     </div>
 </div>
 
-
 <% for(var i = 0; i < favoritesFromDb.length; i++ ){ %>
 <div class="container">
-        <ul>
-            <li>
-                <%= favoritesFromDb[i]._id %> - <%= favoritesFromDb[i].userId %> - <%= favoritesFromDb[i].prodId %> - <%= favoritesFromDb[i].sesId %>
-            </li>
-        </ul>
+    <ul>
+        <li>
+            <%= favoritesFromDb[i].userId %> -
+            <%= favoritesFromDb[i].prodId %> -
+            <%= favoritesFromDb[i]._id %> -
+            <%= favoritesFromDb[i].sesId %>
+
+        </li>
+    </ul>
 </div>
 <% } %>
+<hr>
+
+<% for(var i = 0; i < productFromQuery.length; i++ ){ %>
+<div class="container">
+    <ul>
+        <li>
+            <%= productFromQuery[i].title %> -
+
+        </li>
+    </ul>
+</div>
+<% } %>
+<hr>
 
 <% include partials/footer.ejs %>
 
