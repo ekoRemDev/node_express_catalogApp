@@ -7,5 +7,8 @@ var favorites = new Schema({
     sesId: {type: String, required: true},
 });
 
+
+
 module.exports = mongoose.model('favorites', favorites);
+module.exports.SimpleMessage = 'Hello world 2';
 
