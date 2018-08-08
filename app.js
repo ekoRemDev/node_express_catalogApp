@@ -34,10 +34,8 @@ app.get('/product_single/:id?',routes.product_single);
 app.get('/contact',routes.contact);
 app.get('/login',routes.login);
 app.get('/favorite/:id?',routes.favorite);
+app.get('/products', routes.products);
 app.get('/*',routes.notFound);
-
-
-
 
 
 
@@ -68,5 +66,11 @@ app.listen(3000, (req, res)=>{
 // Todo 21 - Implement product images on main page
 // Todo 22 - contact and login templates and routes created
 // Todo 23 - favourites | like | decision list routes are created
+// Todo 30 - we use node_express_catalogApp db in mongo
+/* Todo 31 - we'll create products to get data from mongo
+    - create link on the header
+    - create view
+    - create route
+ */
 
 

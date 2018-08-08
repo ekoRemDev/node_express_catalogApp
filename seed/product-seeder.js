@@ -42,7 +42,6 @@ var products =[
             description: "This is the best cup cake in the Town",
             price: 2,
         })
-
 ];
 
 

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include partials/head.ejs %>
+    <title><%= title %></title>
+</head>
+<body>
+<% include partials/header.ejs %>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center"><%= title %></h1>
+    </div>
+</div>
+
+<!-- /container -->
+<div class="container">
+    <div class="row">
+        <% for(var i = 0; i < productsFromDb.length; i++ ){ %>
+        <!--<a href="/product_single/<%= productsFromDb[i]._id %>" role="button">-->
+            <div class="col-md-3">
+                <div class="container">
+                    <span class="label label-warning margin-bottom-new"><%= productsFromDb[i].title %></span>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-info btn-block">Price <span class="badge"><%= productsFromDb[0].price %>
+                            Gel</span></button>
+                </div>
+
+                <img src="<%= productsFromDb[i].imagePath %>" alt="" class="img-fluid img-thumbnail">
+
+
+
+
+
+                <br>
+                <button class="add-to-cart btn btn-default btn-block" type="button">add to cart</button>
+                <br>
+                <br>
+            </div>
+        <!--</a>-->
+        <% } %>
+    </div>
+    <hr>
+</div>
+<!-- /container -->
+
+<% include partials/footer.ejs %>
+
+<% include partials/script.ejs %>
+</body>
+</html>
