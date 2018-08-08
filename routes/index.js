@@ -11,19 +11,32 @@ const copyright = ' 2018 EkoRemDev@gmail.com';
 const productJSON = require('../product');
 const products = productJSON.products;
 
-
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/node_express_catalogApp');
 const db = mongoose.connection;
 
+
 // Todo 13 We are editing routes
 exports.home = (req, res) => {
+    var viewAmount = 0;
+    var sesid = req.sessionID;
+    if (req.session.page_views) {
+        viewAmount = req.session.page_views++;
+        // res.send(req.session.page_views);
+    } else {
+        req.session.page_views = 1;
+        // viewAmount = 1;
+        // res.send("Welcome to this page for the first time!");
+    }
+
     res.render('home', {
         title: 'Delectable delights for special occasions',
         slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
         projectName: projectName,
         copyright: copyright,
         products: products,
+        viewAmount: viewAmount,
+        sesid: sesid
     });
 };
 
@@ -32,12 +45,11 @@ exports.about = (req, res) => {
         title: 'About Us',
         slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
         projectName: projectName,
-        copyright: copyright
+        copyright: copyright,
     });
 };
 
 exports.product_single = (req, res) => {
-
     let requiredId = req.params.id;
     let searchResults = [];
 
@@ -53,7 +65,7 @@ exports.product_single = (req, res) => {
         title: 'Product Detail Title',
         projectName: projectName,
         copyright: copyright,
-        searchResults: searchResults
+        searchResults: searchResults,
     });
 };
 
@@ -62,7 +74,7 @@ exports.notFound = (req, res) => {
         title: 'Not Found Title',
         slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
         projectName: projectName,
-        copyright: copyright
+        copyright: copyright,
     });
 };
 
@@ -70,7 +82,7 @@ exports.login = (req, res) => {
     res.render('login', {
         title: 'Login Title',
         projectName: projectName,
-        copyright: copyright
+        copyright: copyright,
     });
 };
 
@@ -79,36 +91,67 @@ exports.contact = (req, res) => {
         title: 'Contact Us',
         slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
         projectName: projectName,
-        copyright: copyright
+        copyright: copyright,
     });
 };
 
 exports.favorite = (req, res) => {
 
-    let requiredId = req.params.id;
-    res.send(requiredId);
+    const favorite = {
+        userId: 1,
+        prodId: req.params.id,
+        sesId: req.sessionID
+    };
+    const favorites = [];
+    favorites.push(favorite);
 
-    // TODO i stopped here i have to create first database and models then i'll continue editing
 
-    // res.render('favorite', {
-    //     title: 'favorite',
-    //     projectName : projectName,
-    //     copyright : copyright
-    // });
+    db.collection('favorites').insert(favorite);
+    // res.redirect('/product_single/' + req.params.id);
+    res.redirect('/favorites');
+
 };
 
 exports.products = (req, res) => {
-
     const products = require('../models/product');
-    db.model('products').find((err,data)=>{
+    db.model('products').find((err, data) => {
         let productsFromDb = data;
 
         res.render('products', {
             title: 'Products',
             projectName: projectName,
             copyright: copyright,
-            productsFromDb: productsFromDb
+            productsFromDb: productsFromDb,
         });
     });
 
+};
+
+exports.categories = (req, res) => {
+    const categories = require('../models/category');
+    db.model('categories').find((err, data) => {
+        let categoriesFromDb = data;
+
+        res.render('categories', {
+            title: 'Delectable delights for special occasions',
+            projectName: projectName,
+            copyright: copyright,
+            categoriesFromDb: categoriesFromDb,
+        });
+    });
+
+};
+
+exports.favorites = (req, res) => {
+    const favorites = require('../models/favorites');
+    db.model('favorites').find((err, data) => {
+        let favoritesFromDb = data;
+
+        res.render('favorites', {
+            title: 'Favorites Delectable delights for special occasions',
+            projectName: projectName,
+            copyright: copyright,
+            favoritesFromDb: favoritesFromDb
+        });
+    });
 };

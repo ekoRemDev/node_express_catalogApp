@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include partials/head.ejs %>
+    <title><%= title %></title>
+</head>
+<body>
+<% include partials/header.ejs %>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center"><%= title %></h1>
+    </div>
+</div>
+
+<!-- /container -->
+<div class="container">
+    <div class="row">
+        <% for(var i = 0; i < categoriesFromDb.length; i++ ){ %>
+        <!--<a href="/product_single/<%= categoriesFromDb[i]._id %>" role="button">-->
+            <div class="col-md-3">
+                <div class="container">
+                    <span class="label label-warning margin-bottom-new"><%= categoriesFromDb[i].categoryTitle %></span>
+                </div>
+
+
+
+                <img src="<%= categoriesFromDb[i].categoryImage %>" alt="" class="img-fluid img-thumbnail">
+                <div class="container">
+                    <span class="label label-warning margin-bottom-new"><%= categoriesFromDb[i].categoryDescription %></span>
+                </div>
+
+
+                <br>
+            </div>
+        <!--</a>-->
+        <% } %>
+    </div>
+    <hr>
+</div>
+<!-- /container -->
+
+<% include partials/footer.ejs %>
+
+<% include partials/script.ejs %>
+</body>
+</html>

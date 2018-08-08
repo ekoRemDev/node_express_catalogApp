@@ -82,7 +82,6 @@ Navbar and Navigation Styles / Overrides
 
 .dropdown.open .dropdown-menu li a:hover {
     color: #fde5b9;
-
 }
 
 .navbar-nav > li:first-child {
@@ -505,6 +504,7 @@ Custom Styles Styles
 body {
     padding-top: 50px;
     background-color: #F0FFFF;
+
 }
 
 .starter-template {

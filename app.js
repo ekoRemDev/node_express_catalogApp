@@ -7,6 +7,13 @@ const express = require('express');
 // Todo 2 - create an express instance
 const app = express();
 
+// Todo 34 - We'll use express session
+// var cookieParser = require('cookie-parser');
+const session = require('express-session');
+// app.use(cookieParser());
+app.use(session({secret: "Secret Catalog App!"}));
+
+
 // Todo 5 - We'll use static content
 var path = require('path');
 app.use(express.static(path.join(__dirname,'public')));
@@ -34,7 +41,9 @@ app.get('/product_single/:id?',routes.product_single);
 app.get('/contact',routes.contact);
 app.get('/login',routes.login);
 app.get('/favorite/:id?',routes.favorite);
+app.get('/favorites', routes.favorites);
 app.get('/products', routes.products);
+app.get('/categories', routes.categories);
 app.get('/*',routes.notFound);
 
 
@@ -72,5 +81,8 @@ app.listen(3000, (req, res)=>{
     - create view
     - create route
  */
+
+// Todo 32 - we'll create categories model, route,view and collections in db
+
 
 

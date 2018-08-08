@@ -10,13 +10,24 @@
 <div class="jumbotron">
     <div class="container">
         <h1 class="text-center"><%= title %></h1>
-        <p class="text-center"><%= slogan %></p>
-
     </div>
 </div>
+
+
+<% for(var i = 0; i < favoritesFromDb.length; i++ ){ %>
+<div class="container">
+        <ul>
+            <li>
+                <%= favoritesFromDb[i]._id %> - <%= favoritesFromDb[i].userId %> - <%= favoritesFromDb[i].prodId %> - <%= favoritesFromDb[i].sesId %>
+            </li>
+        </ul>
+</div>
+<% } %>
 
 <% include partials/footer.ejs %>
 
 <% include partials/script.ejs %>
 </body>
 </html>
+
+
