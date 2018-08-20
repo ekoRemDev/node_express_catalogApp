@@ -10,9 +10,15 @@ var products =[
     new Product(
         {
             prodId:1,
+<<<<<<< HEAD
             imagePath: "/images/cupcake1.jpg",
             title: "Chocolate - Cup Cake of The Cup Cake 01",
             description: "This is the best cup cake in the Town 01",
+=======
+            imagePath: "/images/cupcake0.jpg",
+            title: "Chocolate - Cup Cake of The Cup Cake",
+            description: "This is the best cup cake in the Town",
+>>>>>>> 6f4fe43be80065fbc987d499f70f59fced5b9740
             price: 4,
             votes:'91% of buyers enjoyed this product! (101 votes)',
             mainPageShow : true
@@ -20,9 +26,15 @@ var products =[
     new Product(
         {
             prodId:2,
+<<<<<<< HEAD
             imagePath: "/images/cupcake2.jpg",
             title: "Orange - Cup Cake of The Cup Cake 02",
             description: "This is the best cup cake in the Town 02",
+=======
+            imagePath: "/images/cupcake0.jpg",
+            title: "Orange - Cup Cake of The Cup Cake",
+            description: "This is the best cup cake in the Town",
+>>>>>>> 6f4fe43be80065fbc987d499f70f59fced5b9740
             price: 5,
             votes:'91% of buyers enjoyed this product! (102 votes)',
             mainPageShow : false
@@ -30,9 +42,15 @@ var products =[
     new Product(
         {
             prodId:3,
+<<<<<<< HEAD
             imagePath: "/images/cupcake3.jpg",
             title: "Strawberry - Cup Cake of The Cup Cake 03",
             description: "This is the best cup cake in the Town 03",
+=======
+            imagePath: "/images/cupcake0.jpg",
+            title: "Strawberry - Cup Cake of The Cup Cake",
+            description: "This is the best cup cake in the Town",
+>>>>>>> 6f4fe43be80065fbc987d499f70f59fced5b9740
             price: 3,
             votes:'91% of buyers enjoyed this product! (103 votes)',
             mainPageShow : true
@@ -40,9 +58,15 @@ var products =[
     new Product(
         {
             prodId:4,
+<<<<<<< HEAD
             imagePath: "/images/cupcake4.jpg",
             title: "Apple - Cup Cake of The Cup Cake 04",
             description: "This is the best cup cake in the Town 04",
+=======
+            imagePath: "/images/cupcake0.jpg",
+            title: "Apple - Cup Cake of The Cup Cake",
+            description: "This is the best cup cake in the Town",
+>>>>>>> 6f4fe43be80065fbc987d499f70f59fced5b9740
             price: 6,
             votes:'91% of buyers enjoyed this product! (104 votes)',
             mainPageShow : false
@@ -50,9 +74,15 @@ var products =[
     new Product(
         {
             prodId:5,
+<<<<<<< HEAD
             imagePath: "/images/cupcake5.jpg",
             title: "Just - Cup Cake of The Cup Cake 05",
             description: "This is the best cup cake in the Town 05",
+=======
+            imagePath: "/images/cupcake0.jpg",
+            title: "Just - Cup Cake of The Cup Cake",
+            description: "This is the best cup cake in the Town",
+>>>>>>> 6f4fe43be80065fbc987d499f70f59fced5b9740
             price: 2,
             votes:'91% of buyers enjoyed this product! (105 votes)',
             mainPageShow : true

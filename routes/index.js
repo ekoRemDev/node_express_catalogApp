@@ -72,6 +72,7 @@ exports.product_single = (req, res) => {
         if (productId === requiredId) {
             searchResults.push(products[i]);
         }
+        ;
     }
 
     res.render('product_single', {
@@ -156,6 +157,7 @@ exports.categories = (req, res) => {
 };
 
 exports.favorites = (req, res) => {
+<<<<<<< HEAD
 
     const favorites = require('../models/favorites');
 
@@ -212,5 +214,36 @@ exports.product = (req,res)=>{
             copyright: copyright,
             productFromDb: productFromDb
         });
+=======
+
+
+    res.render('favorites', {
+        title: 'Favorites Delectable delights for special occasions',
+        projectName: projectName,
+        copyright: copyright,
+>>>>>>> 6f4fe43be80065fbc987d499f70f59fced5b9740
     });
+
+    // const favorites = require('../models/favorites');
+    // db.model('favorites').find({'sesId': req.sessionID}, (err, data) => {
+    //     favoritesFromDb = data;
+    //
+    //     for (var i = 0; i < favoritesFromDb.length; i++) {
+    //         console.log(favoritesFromDb[i].prodId);
+    //
+    //         const product = require('../models/product');
+    //         db.model('products').find({'prodId': favoritesFromDb[i].prodId}, (err, prod) => {
+    //             const productFromQuery = prod;
+    //             // console.log(productFromQuery[0].title)
+    //             res.render('favorites', {
+    //                 title: 'Favorites Delectable delights for special occasions',
+    //                 projectName: projectName,
+    //                 copyright: copyright,
+    //                 // favoritesFromDb: favoritesFromDb,
+    //                 productFromQuery: productFromQuery
+    //             });
+    //         });
+    //     };
+    //
+    // });
 };
