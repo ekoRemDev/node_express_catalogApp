@@ -17,29 +17,18 @@
 <div class="container">
     <div class="row">
         <% for(var i = 0; i < productsFromDb.length; i++ ){ %>
-        <!--<a href="/product_single/<%= productsFromDb[i]._id %>" role="button">-->
-            <div class="col-md-3">
+        <!--<a href="/product/<%= productsFromDb[i]._id %>" role="button">-->
+        <a href="/product/<%= productsFromDb[i].prodId %>" role="button">
+        <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="container">
                     <span class="label label-warning margin-bottom-new"><%= productsFromDb[i].title %></span>
                 </div>
 
-                <div>
-                    <button type="button" class="btn btn-info btn-block">Price <span class="badge"><%= productsFromDb[0].price %>
-                            Gel</span></button>
-                </div>
-
                 <img src="<%= productsFromDb[i].imagePath %>" alt="" class="img-fluid img-thumbnail">
 
-
-
-
-
-                <br>
-                <button class="add-to-cart btn btn-default btn-block" type="button">add to cart</button>
-                <br>
                 <br>
             </div>
-        <!--</a>-->
+        </a>
         <% } %>
     </div>
     <hr>

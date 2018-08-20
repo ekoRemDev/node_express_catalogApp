@@ -18,26 +18,31 @@
     </div>
 </div>
 
+
+
+
+
+<!-- /container -->
 <div class="container">
-
-
-
     <div class="row">
-        <% for(var i = 0; i < products.length; i++ ){ %>
-        <a href="/product_single/<%= products[i].number %>" role="button">
-            <div class="col-md-3">
-                <span class="label label-info"><%= products[i].title %></span>
-                <img src="/images/<%= products[i].poster %>" alt="" class="img-fluid img-thumbnail">
+        <% for(var i = 0; i < productsFromDb.length; i++ ){ %>
+        <!--<a href="/product/<%= productsFromDb[i]._id %>" role="button">-->
+        <a href="/product/<%= productsFromDb[i].prodId %>" role="button">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="container">
+                    <span class="label label-warning margin-bottom-new"><%= productsFromDb[i].title %></span>
+                </div>
+
+                <img src="<%= productsFromDb[i].imagePath %>" alt="" class="img-fluid img-thumbnail">
+
+                <br>
             </div>
         </a>
         <% } %>
-
     </div>
-
     <hr>
-
-
-</div> <!-- /container -->
+</div>
+<!-- /container -->
 
 <% include partials/footer.ejs %>
 

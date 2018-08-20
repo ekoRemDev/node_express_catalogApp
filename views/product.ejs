@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include partials/head.ejs %>
+    <title><%= productFromDb[0].title %></title>
+
+</head>
+<body>
+<% include partials/header.ejs %>
+
+<div class="starter-template"></div>
+
+
+<div class="container">
+    <div class="card">
+        <div class="container-fluid">
+            <div>
+                <div class="preview col-md-6">
+                    <div><img src="<%= productFromDb[0].imagePath %>" class="img-thumbnail"/></div>
+                </div>
+                <div class="details col-md-6">
+
+                    <h2 class="text-center"><%= productFromDb[0].title %></h2>
+
+                    <hr>
+
+                    <hr>
+
+                    <h4 class="text-justify"><%= productFromDb[0].description %></h4>
+
+                    <hr>
+                    <button type="button" class="btn btn-info">Price <span
+                                class="badge"><%= productFromDb[0].price %> Gel</span></button>
+                    <hr>
+
+                    <p><strong><%= productFromDb[0].votes %></strong></p>
+                    <a href="/favorite/<%= productFromDb[0].prodId %>">
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Favourite
+                        </button>
+                    </a>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Like
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Decision List
+                    </button>
+                    <hr>
+
+                    <div>
+                        <button class="add-to-cart btn btn-default btn-block" type="button">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer.ejs %>
+
+<% include partials/script.ejs %>
+</body>
+</html>

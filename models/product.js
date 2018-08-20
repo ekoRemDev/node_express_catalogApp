@@ -7,6 +7,8 @@ var products = new Schema({
     title: {type: String, required: true},
     description: {type: String, required: true},
     price: {type: Number, required: true},
+    votes: {type: String, required: false},
+    mainPageShow: {type: Boolean, required: false},
 });
 
 module.exports = mongoose.model('products', products);

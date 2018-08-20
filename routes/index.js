@@ -8,16 +8,20 @@
 const projectName = "Catalog App";
 const copyright = ' 2018 EkoRemDev@gmail.com';
 // Todo 20 - create an instance of product.json
-const productJSON = require('../product');
-const products = productJSON.products;
+// const productJSON = require('../product');
+// const products = productJSON.products;
+
+
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/node_express_catalogApp');
 const db = mongoose.connection;
 
 
+
 // Todo 13 We are editing routes
 exports.home = (req, res) => {
+
     var viewAmount = 0;
     var sesid = req.sessionID;
     if (req.session.page_views) {
@@ -29,15 +33,25 @@ exports.home = (req, res) => {
         // res.send("Welcome to this page for the first time!");
     }
 
-    res.render('home', {
-        title: 'Delectable delights for special occasions',
-        slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
-        projectName: projectName,
-        copyright: copyright,
-        products: products,
-        viewAmount: viewAmount,
-        sesid: sesid
+    // Todo 35 - We cancel data from json and get data from mongo
+    const product = require('../models/product');
+    db.model('products').find({'mainPageShow': true}, (err, data)=>{
+        productsFromDb = data;
+
+        res.render('home', {
+            title: 'Delectable delights for special occasions',
+            slogan: 'Sweets. Treats. Celebrations. Tastefully sweet. Playfully unique. Make people happy… Serve more... Cupcakes, cookies, cake pops, and more. Cupcakes make people happy.',
+            projectName: projectName,
+            copyright: copyright,
+            // products: products,
+            productsFromDb: productsFromDb,
+            viewAmount: viewAmount,
+            sesid: sesid
+        });
     });
+
+
+
 };
 
 exports.about = (req, res) => {
@@ -58,9 +72,7 @@ exports.product_single = (req, res) => {
         if (productId === requiredId) {
             searchResults.push(products[i]);
         }
-        ;
     }
-    ;
 
     res.render('product_single', {
         title: 'Product Detail Title',
@@ -145,14 +157,25 @@ exports.categories = (req, res) => {
 
 exports.favorites = (req, res) => {
 
+    const favorites = require('../models/favorites');
 
-    res.render('favorites', {
-        title: 'Favorites Delectable delights for special occasions',
-        projectName: projectName,
-        copyright: copyright,
+
+    db.model('favorites').find({'sesId': req.sessionID}, (err, data) => {
+        favoritesFromDb = data;
+
+        res.render('favorites', {
+            title: 'Favorites Delectable delights for special occasions',
+            projectName: projectName,
+            copyright: copyright,
+            favoritesFromDb: favoritesFromDb
+        });
+
+
+
     });
 
-    // const favorites = require('../models/favorites');
+
+
     // db.model('favorites').find({'sesId': req.sessionID}, (err, data) => {
     //     favoritesFromDb = data;
     //
@@ -174,4 +197,20 @@ exports.favorites = (req, res) => {
     //     };
     //
     // });
+};
+
+exports.product = (req,res)=>{
+    const product = require('../models/product');
+    const requiredId = req.params.id;
+
+    db.model('products').find({'prodId': requiredId}, (err, data) => {
+        productFromDb = data;
+
+        res.render('product', {
+            title: 'Favorites Delectable delights for special occasions',
+            projectName: projectName,
+            copyright: copyright,
+            productFromDb: productFromDb
+        });
+    });
 };

@@ -44,6 +44,7 @@ app.get('/favorite/:id?',routes.favorite);
 app.get('/favorites', routes.favorites);
 app.get('/products', routes.products);
 app.get('/categories', routes.categories);
+app.get('/product/:id?',routes.product);
 app.get('/*',routes.notFound);
 
 
@@ -85,4 +86,4 @@ app.listen(3000, (req, res)=>{
 // Todo 32 - we'll create categories model, route,view and collections in db
 
 
-
+// Todo 34 - create product page for product detail
